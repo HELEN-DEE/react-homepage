@@ -1,5 +1,6 @@
 import mainImage from "../assets/image-web-3-desktop.jpg"
 import FeatureCard from "./FeatureCard";
+import New from './New';
 
 import firstImg from "../assets/image-retro-pcs.jpg"
 import secondImg from "../assets/image-top-laptops.jpg"
@@ -24,52 +25,30 @@ const featureCards = [
 ]
 const Homepage = () => {
     return (
-        <div className="mx-[7rem] mt-9 "> 
-            <div className="flex gap-8 ">
-                <div className=" ">
-                    <img src={mainImage} alt="main-img" className=""/>
-                    <div className="flex pt-8 justify-between">
-                        <h1 className="capitalize text-6xl font-extrabold text-[#00001a] w-[47%]">
+        <div className="px-4 lg:px-28 py-4"> 
+            <div className=" grid lg:grid-cols-3 gap-6">
+                <div className="grid col-span-2">
+                    <img src={mainImage} alt="main-img" className="grid col-span-1"/>
+                    <div className="grid lg:grid-cols-2 gap-10 lg:pt-6">
+                        <h1 className="capitalize text-5xl font-extrabold text-[#00001a] lg:py-0 py-4">
                             The bright future of web 3.0?
                         </h1>
-                        <div className="w-[47%]">
-                            <p className="leading-6 text-[#5d5f79] text-[14px]">
+                        <div className="pb-6">
+                            <p className="leading-6 text-[#5d5f79] text-[14px] pb-6 lg:pb-8">
                                 We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fufilling its promise?
                             </p>
-                            <button className="uppercase bg-[#f15e50] text-[#00001a] tracking-[4px] px-6 py-3 font-extrabold mt-6 text-md hover:bg-[#00001a] hover:text-[#fffdfa] ease-in duration-200">
+                            <button className="uppercase bg-[#f15e50] text-[#00001a] tracking-[4px] px-6 py-3 font-extrabold  text-md hover:bg-[#00001a] hover:text-[#fffdfa] ease-in duration-200">
                                 read more
                             </button>
                         </div>
                     </div>
                 </div>
-                <div className="bg-[#00001a] w-[65%]  px-5  flex flex-col gap-1 justify-center ">
-                    <h2 className="text-[#e9ab53] text-3xl font-bold">
-                        New
-                    </h2>
-                    <div className="text-[#fffdfa]">
-                        <h3 className="font-bold text-lg pt-3 hover:text-[#e9ab53] ease-in duration-150">Hydrogen VS Electric Cars</h3>
-                        <p className="text-[14px] text-[#c5c6ce] pb-4 leading-7">
-                        Will hydrogen-fueled cars ever catch up to EVs?
-                        </p>
-                        <hr className="border-[#c5c6ce] border-[0.3px]" />
-
-                        <h3 className="font-bold text-lg pt-3 hover:text-[#e9ab53] ease-in duration-150">The Downsides of AI Artistry</h3>
-                        <p className="text-[14px] text-[#c5c6ce] pb-4 leading-7">
-                        What are the possible adverse effects of on-demand AI image generation?
-                        </p>
-                        <hr className="border-[#c5c6ce] border-[0.3px]"/>
-
-                        <h3 className="font-bold text-lg pt-3 hover:text-[#e9ab53] ease-in duration-150">Is VC Funding Drying Up?</h3>
-                        <p className="text-[14px] text-[#c5c6ce]  leading-7">
-                        Private funding by VC firms is down 50% YOY. We take a look at what that means.
-                        </p>
-                    </div>
-                </div>
+                <New />
             </div>
 
 
             
-                <div className="flex pt-[5rem] gap-5">
+                <div className="lg:flex pt-[5rem] gap-5">
                     {featureCards.map((feature, index) => (
                         <FeatureCard key={index} item={feature}/>
                     ))}

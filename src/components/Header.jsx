@@ -9,10 +9,10 @@ const navLinks = [
 ]
 const Header = () => {
     return (
-        <header className="mx-[7rem] mt-[2rem]">
+        <header className="px-4 lg:px-28  py-4">
             <div className="flex justify-between">
                 <img src={logo} alt="logo-img"/>
-                <ul className="flex gap-8 text-[14px] "> 
+                <ul className="lg:flex gap-8 text-[14px] hidden"> 
                     {navLinks.map((link, index) => (
                         <li key={index}>
                             <a className="text-[#5d5f79] hover:text-[#f15e50] capitalize" href={link.path}>
