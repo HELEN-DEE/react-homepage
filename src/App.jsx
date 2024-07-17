@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import Homepage from "./components/Homepage";
-// import Counter from "./components/Counter"
-// import Switch from "./components/Switch"
+
+
 
 
 export default function App() {
@@ -10,8 +10,6 @@ export default function App() {
       <Header/>
       <Homepage/>
       
-      {/* <Counter/> */}
-      {/* <Switch/> */}
       
     </main>
   )
