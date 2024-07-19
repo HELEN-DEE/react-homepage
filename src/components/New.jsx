@@ -17,14 +17,14 @@ const newLink = [
 
 const New = () => {
     return (
-        <div className="bg-[#00001a] px-5 flex flex-col justify-center h-[72vh]">
-            <h2 className="text-[#e9ab53] text-4xl font-bold">
+        <div className="bg-[#00001a] px-5  ">
+            <h2 className="text-[#e9ab53] text-4xl font-bold py-2">
                 New
             </h2>
-            <div className="text-[#fffdfa] ">
+            <div className="text-[#fffdfa] space-y-7">
                 {newLink.map((item, index) => (
                     <div key={index}>
-                        <h3 className="font-bold text-lg pt-3 hover:text-[#e9ab53] ease-in duration-150">{item.mainText}</h3>
+                        <h3 className="font-bold text-lg pt-2 hover:text-[#e9ab53] ease-in duration-150">{item.mainText}</h3>
                         <p className="text-[14px] text-[#c5c6ce] pb-4 leading-7">{item.subText}</p>
                         {index < newLink.length - 1 && (
                             <hr className="border-[#c5c6ce] border-[0.3px] mt-2" />

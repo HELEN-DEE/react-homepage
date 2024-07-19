@@ -27,10 +27,10 @@ const Homepage = () => {
     return (
         <div className="px-4 lg:px-28 py-4"> 
             <div className=" grid lg:grid-cols-3 gap-6">
-                <div className="grid col-span-2">
+                <div className="grid lg:col-span-2">
                     <img src={mainImage} alt="main-img" className="grid col-span-1"/>
-                    <div className="grid lg:grid-cols-2 gap-10 lg:pt-6">
-                        <h1 className="capitalize text-5xl font-extrabold text-[#00001a] lg:py-0 py-4">
+                    <div className="grid lg:grid-cols-2 gap-x-10 lg:pt-6">
+                        <h1 className="capitalize text-5xl font-extrabold text-[#00001a] lg:py-0 py-2">
                             The bright future of web 3.0?
                         </h1>
                         <div className="pb-6">
