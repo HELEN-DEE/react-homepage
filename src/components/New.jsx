@@ -17,7 +17,7 @@ const newLink = [
 
 const New = () => {
     return (
-        <div className="bg-[#00001a] px-5  ">
+        <div className="bg-[#00001a] px-5 py-6  ">
             <h2 className="text-[#e9ab53] text-4xl font-bold py-2">
                 New
             </h2>
