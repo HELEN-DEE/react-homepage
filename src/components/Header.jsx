@@ -34,9 +34,9 @@ const Header = () => {
       </nav>
 
     {isMenuOpen && (
-        <div className="fixed right-0 top-0 py-4 h-full w-80 bg-white px-7  transition duration-400 ease-in">
-        <div className="">
-          <button className="lg:hidden absolute top-1 right-1" onClick={menuToggle}>
+        <div className="fixed right-0 top-0 py-4 h-full w-80 bg-white px-7 transform transition-transform duration-300 ease-in-out">
+        <div className="transition ease-in duration-100">
+          <button className="lg:hidden absolute top-5 right-1" onClick={menuToggle}>
         <VscChromeClose size={50} className="transition duration-150 ease-in"/>
     </button>
     <ul className="space-y-5 mt-28">
